@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lupharma | Farmácia de Manipulação em São Vicente</title>
+<meta name="description" content="Farmácia de manipulação no Centro de São Vicente. Fórmulas personalizadas, suplementos e dermocosméticos com orientação farmacêutica. Peça seu orçamento pelo WhatsApp.">
+<link rel="canonical" href="https://lupharma.com.br/">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<meta name="theme-color" content="#0e3b2c">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://lupharma.com.br/">
+<meta property="og:title" content="Lupharma | Farmácia de Manipulação em São Vicente">
+<meta property="og:description" content="Fórmulas feitas sob medida, suplementos e dermocosméticos. Envie sua receita e peça seu orçamento pelo WhatsApp.">
+<meta property="og:image" content="https://lupharma.com.br/img/og.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Pharmacy",
+  "name": "Lupharma Farmácia de Manipulação",
+  "url": "https://lupharma.com.br/",
+  "image": "https://lupharma.com.br/img/og.jpg",
+  "logo": "https://lupharma.com.br/img/logo.png",
+  "telephone": ["+55-13-3568-4945", "+55-13-3467-1206"],
+  "email": "lupharmanipulacao@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Ipiranga, 183",
+    "addressLocality": "São Vicente",
+    "addressRegion": "SP",
+    "postalCode": "11310-421",
+    "addressCountry": "BR"
+  },
+  "sameAs": ["https://www.instagram.com/lupharma183/", "https://www.facebook.com/profile.php?id=61583789307292"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --verde-escuro:#0e3b2c;
+  --verde:#1f7a3d;
+  --verde-vivo:#5cb82e;
+  --lima:#a6e05a;
+  --creme:#f6f8f1;
+  --menta:#e7f3e2;
+  --texto:#1a2620;
+  --suave:#5b6b62;
+  --borda:#dfe8da;
+  --branco:#fff;
+  --raio:22px;
+  --sombra:0 20px 50px -20px rgba(14,59,44,.25);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Manrope,system-ui,sans-serif;color:var(--texto);background:var(--creme);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.1;color:var(--verde-escuro);font-weight:600;letter-spacing:-.01em}
+h2{font-size:clamp(2rem,4vw,2.9rem)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--verde)}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--verde-vivo);border-radius:2px}
+.lead{color:var(--suave);font-size:1.08rem;max-width:58ch}
+section{padding:96px 0}
+.sec-head{display:grid;gap:14px;margin-bottom:48px;max-width:680px}
+.sec-head.center{margin-inline:auto;text-align:center;justify-items:center}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 26px;border-radius:999px;font-weight:700;font-size:1rem;transition:transform .2s,box-shadow .2s,background .2s;cursor:pointer;border:0}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-zap{background:var(--verde-vivo);color:#fff;box-shadow:0 12px 28px -10px rgba(92,184,46,.7)}
+.btn-zap:hover{transform:translateY(-2px);background:#4fa625}
+.btn-ghost{background:transparent;color:var(--verde-escuro);border:1.5px solid var(--borda)}
+.btn-ghost:hover{border-color:var(--verde);background:#fff}
+
+/* topo */
+.topbar{background:var(--verde-escuro);color:#d6ead9;font-size:.86rem}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;padding:9px 0;flex-wrap:wrap}
+.topbar span{display:inline-flex;align-items:center;gap:6px}
+.topbar b{color:var(--lima)}
+header.nav{position:sticky;top:0;z-index:50;background:rgba(246,248,241,.88);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .2s}
+header.nav.scrolled{border-color:var(--borda)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:78px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{height:54px;width:auto}
+.brand .nome{font-family:Fraunces,serif;font-weight:700;font-size:1.35rem;color:var(--verde-escuro);line-height:1}
+.brand .nome small{display:block;font-family:Manrope,sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--verde);margin-top:4px}
+.menu{display:flex;gap:30px;font-weight:600;font-size:.95rem}
+.menu a{color:var(--suave);transition:color .2s}
+.menu a:hover{color:var(--verde-escuro)}
+.nav .btn{padding:11px 20px;font-size:.92rem}
+.burger{display:none;background:none;border:0;width:44px;height:44px;border-radius:12px;cursor:pointer}
+.burger span{display:block;width:22px;height:2px;background:var(--verde-escuro);margin:5px auto;border-radius:2px}
+
+/* hero */
+.hero{padding:56px 0 96px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;width:720px;height:720px;right:-220px;top:-200px;background:radial-gradient(circle,var(--menta) 0%,transparent 65%);z-index:-1}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,5.6vw,4.4rem);margin:18px 0 22px}
+.hero h1 em{font-style:italic;color:var(--verde);position:relative}
+.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.08em;height:.18em;background:var(--lima);opacity:.55;z-index:-1;border-radius:4px}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin:34px 0 36px}
+.selos{display:flex;gap:22px;flex-wrap:wrap;color:var(--suave);font-size:.9rem;font-weight:600}
+.selos span{display:inline-flex;align-items:center;gap:8px}
+.selos svg{width:20px;height:20px;color:var(--verde)}
+.hero-foto{position:relative}
+.hero-foto .moldura{border-radius:32px;overflow:hidden;box-shadow:var(--sombra);aspect-ratio:4/4.3;transform:rotate(1.5deg)}
+.hero-foto .moldura img{width:100%;height:100%;object-fit:cover;object-position:40% center}
+.flutua{position:absolute;background:#fff;border-radius:18px;padding:14px 18px;box-shadow:var(--sombra);display:flex;align-items:center;gap:12px;font-size:.88rem;line-height:1.35}
+.flutua .ic{width:42px;height:42px;border-radius:12px;background:var(--menta);display:grid;place-items:center;color:var(--verde);flex:none}
+.flutua .ic svg{width:22px;height:22px}
+.flutua b{display:block;color:var(--verde-escuro);font-size:.95rem}
+.flutua.f1{left:-28px;bottom:42px}
+.flutua.f2{right:-18px;top:34px}
+
+/* como funciona */
+.passos{background:var(--verde-escuro);color:#cfe3d4;border-radius:36px;padding:64px 56px;position:relative;overflow:hidden}
+.passos::after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(166,224,90,.18),transparent 70%);right:-120px;bottom:-160px}
+.passos h2{color:#fff}
+.passos .eyebrow{color:var(--lima)}
+.passos .sec-head .lead{color:#a9c4b2}
+.passo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;position:relative;z-index:1}
+.passo{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--raio);padding:28px}
+.passo .num{font-family:Fraunces,serif;font-size:2.6rem;color:var(--lima);line-height:1;margin-bottom:16px}
+.passo h3{color:#fff;font-size:1.3rem;margin-bottom:8px}
+.passo p{font-size:.95rem}
+
+/* serviços */
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:#fff;border:1px solid var(--borda);border-radius:var(--raio);padding:34px 30px;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);box-shadow:var(--sombra)}
+.card .ic{width:56px;height:56px;border-radius:16px;background:var(--menta);color:var(--verde);display:grid;place-items:center;margin-bottom:22px}
+.card .ic svg{width:28px;height:28px}
+.card h3{font-size:1.4rem;margin-bottom:10px}
+.card p{color:var(--suave);font-size:.97rem}
+.card ul{list-style:none;margin-top:18px;display:grid;gap:8px;font-size:.92rem;font-weight:600}
+.card li{display:flex;gap:8px;align-items:center}
+.card li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--verde-vivo);flex:none}
+
+/* vantagens */
+.vantagens{background:var(--menta)}
+.vant-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.vant-foto{border-radius:32px;overflow:hidden;aspect-ratio:4/5;box-shadow:var(--sombra)}
+.vant-foto img{width:100%;height:100%;object-fit:cover}
+.vant-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:34px}
+.vant{background:#fff;border-radius:18px;padding:22px}
+.vant h3{font-family:Manrope,sans-serif;font-size:1rem;font-weight:800;color:var(--verde-escuro);display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.vant h3 svg{width:20px;height:20px;color:var(--verde-vivo)}
+.vant p{color:var(--suave);font-size:.93rem}
+
+/* loja */
+.loja-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;grid-template-rows:260px 260px;gap:18px}
+.loja-grid figure{border-radius:var(--raio);overflow:hidden;position:relative}
+.loja-grid img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.loja-grid figure:hover img{transform:scale(1.04)}
+.loja-grid figcaption{position:absolute;left:14px;bottom:14px;background:rgba(255,255,255,.92);padding:7px 14px;border-radius:999px;font-size:.82rem;font-weight:700;color:var(--verde-escuro)}
+.loja-grid .g1{grid-row:span 2}
+.loja-grid .g2{grid-column:span 2}
+.loja-grid .g4{background:var(--verde);color:#e3f2e2;padding:28px;display:flex;flex-direction:column;justify-content:space-between}
+.g4 h3{color:#fff;font-size:1.5rem}
+.g4 p{font-size:.93rem}
+
+/* sobre */
+.sobre-wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.mv{display:grid;gap:18px}
+.mv .item{border-left:3px solid var(--verde-vivo);padding:4px 0 4px 22px}
+.mv h3{font-size:1.25rem;margin-bottom:6px}
+.mv p{color:var(--suave)}
+.rt{margin-top:30px;display:flex;align-items:center;gap:16px;background:#fff;border:1px solid var(--borda);border-radius:18px;padding:18px 22px}
+.rt .av{width:52px;height:52px;border-radius:50%;background:var(--verde-escuro);color:var(--lima);display:grid;place-items:center;font-family:Fraunces,serif;font-weight:700;font-size:1.2rem;flex:none}
+.rt b{display:block;color:var(--verde-escuro)}
+.rt small{color:var(--suave);font-size:.86rem}
+
+/* faq */
+.faq{display:grid;gap:12px;max-width:820px;margin-inline:auto}
+details{background:#fff;border:1px solid var(--borda);border-radius:18px;padding:0 24px;transition:box-shadow .2s}
+details[open]{box-shadow:var(--sombra)}
+summary{list-style:none;cursor:pointer;padding:22px 0;font-weight:700;font-size:1.05rem;color:var(--verde-escuro);display:flex;justify-content:space-between;gap:16px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.6rem;font-weight:400;color:var(--verde);transition:transform .25s;line-height:1}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--suave);padding-bottom:22px;margin-top:-6px}
+
+/* cta final */
+.cta-final{padding:0 0 96px}
+.cta-box{background:linear-gradient(120deg,var(--verde) 0%,var(--verde-escuro) 100%);border-radius:36px;padding:64px;display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center;color:#d8ecdb;position:relative;overflow:hidden}
+.cta-box::before{content:"";position:absolute;inset:auto -80px -140px auto;width:380px;height:380px;border-radius:50%;border:60px solid rgba(166,224,90,.12)}
+.cta-box h2{color:#fff;margin-bottom:14px}
+.cta-box .acoes{display:grid;gap:12px;justify-items:start;position:relative;z-index:1}
+.cta-box .btn-ghost{color:#fff;border-color:rgba(255,255,255,.3)}
+.cta-box .btn-ghost:hover{background:rgba(255,255,255,.08)}
+
+/* contato */
+.contato-wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:28px}
+.contato-lista{display:grid;gap:14px}
+.ct{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid var(--borda);border-radius:18px;padding:18px 20px;transition:border-color .2s}
+a.ct:hover{border-color:var(--verde-vivo)}
+.ct .ic{width:46px;height:46px;border-radius:14px;background:var(--menta);color:var(--verde);display:grid;place-items:center;flex:none}
+.ct .ic svg{width:22px;height:22px}
+.ct small{display:block;color:var(--suave);font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.ct b{color:var(--verde-escuro);font-size:1.02rem;word-break:break-word}
+.mapa{border-radius:var(--raio);overflow:hidden;border:1px solid var(--borda);min-height:380px}
+.mapa iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+
+/* rodapé */
+footer{background:var(--verde-escuro);color:#9fb9a8;padding:56px 0 28px;font-size:.9rem}
+.foot-top{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;padding-bottom:32px;border-bottom:1px solid rgba(255,255,255,.1)}
+.foot-top .brand .nome{color:#fff}
+.foot-top .brand img{background:#fff;border-radius:14px;padding:4px;height:58px}
+.legal{max-width:520px;display:grid;gap:6px}
+.foot-bot{padding-top:22px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.82rem}
+.foot-bot a:hover{color:#fff}
+
+/* whatsapp flutuante */
+.zap-float{position:fixed;right:20px;bottom:20px;z-index:60;width:62px;height:62px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 14px 30px -8px rgba(37,211,102,.7);transition:transform .2s}
+.zap-float:hover{transform:scale(1.07)}
+.zap-float svg{width:32px;height:32px}
+.zap-float::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #25d366;animation:pulso 2.2s infinite}
+@keyframes pulso{from{transform:scale(1);opacity:.8}to{transform:scale(1.5);opacity:0}}
+
+/* animação de entrada */
+.rev{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.rev.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rev{opacity:1;transform:none}.zap-float::before{animation:none}}
+
+/* responsivo */
+@media (max-width:980px){
+  .menu,.nav .btn{display:none}
+  .burger{display:block}
+  .menu.aberto{display:flex;flex-direction:column;position:absolute;top:78px;left:0;right:0;background:var(--creme);padding:20px 16px 26px;gap:18px;border-bottom:1px solid var(--borda);font-size:1.05rem}
+  .hero .wrap,.vant-wrap,.sobre-wrap,.contato-wrap,.cta-box{grid-template-columns:1fr}
+  .hero-foto{max-width:520px;margin-inline:auto;width:100%}
+  .passo-grid,.serv-grid{grid-template-columns:1fr}
+  .passos,.cta-box{padding:44px 26px;border-radius:28px}
+  .loja-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .loja-grid figure{height:240px}
+  .loja-grid .g1{grid-row:auto;grid-column:span 2;height:320px}
+  .loja-grid .g2{grid-column:span 2}
+  .loja-grid .g4{height:auto}
+  section{padding:72px 0}
+}
+@media (max-width:560px){
+  .topbar .wrap{justify-content:center;text-align:center}
+  .topbar .end{display:none}
+  .brand img{height:46px}
+  .brand .nome{font-size:1.15rem}
+  .flutua.f1{left:8px;bottom:14px}
+  .flutua.f2{right:8px;top:14px}
+  .vant-grid{grid-template-columns:1fr}
+  .loja-grid{grid-template-columns:1fr}
+  .loja-grid .g1,.loja-grid .g2{grid-column:auto}
+  .hero .ctas .btn{width:100%}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="end">📍 Rua Ipiranga, 183 · Centro · São Vicente/SP</span>
+    <span>🛵 <b>Delivery</b> · (13) 3568-4945 · (13) 3467-1206</span>
+  </div>
+</div>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#inicio" class="brand">
+      <img src="img/logo.png" alt="Logo Lupharma">
+      <span class="nome">Lupharma<small>Manipulando saúde</small></span>
+    </a>
+    <nav class="menu" id="menu">
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#loja">A loja</a>
+      <a href="#duvidas">Dúvidas</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn btn-zap js-zap" href="#">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.4 13.4 0 0 0 5.2 4.6c1.8.8 2.5.8 3.4.7a2.9 2.9 0 0 0 1.9-1.3 2.4 2.4 0 0 0 .2-1.3c-.1-.2-.3-.3-.6-.4M12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.8 9.8 0 1 1 8.3 4.6m8.4-18.2A11.8 11.8 0 0 0 1.8 17.8L.1 24l6.4-1.7a11.8 11.8 0 0 0 5.6 1.4 11.8 11.8 0 0 0 8.3-20.1"/></svg>
+      Pedir orçamento
+    </a>
+    <button class="burger" id="burger" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div class="rev">
+      <span class="eyebrow">Farmácia de manipulação em São Vicente</span>
+      <h1>Sua fórmula, feita <em>sob medida</em> para você.</h1>
+      <p class="lead">Medicamentos, suplementos e dermocosméticos manipulados na dose exata da sua receita, com acompanhamento de farmacêutica responsável. Mande a foto da receita e receba seu orçamento pelo WhatsApp.</p>
+      <div class="ctas">
+        <a class="btn btn-zap js-zap" href="#">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.4 13.4 0 0 0 5.2 4.6c1.8.8 2.5.8 3.4.7a2.9 2.9 0 0 0 1.9-1.3 2.4 2.4 0 0 0 .2-1.3c-.1-.2-.3-.3-.6-.4M12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.8 9.8 0 1 1 8.3 4.6m8.4-18.2A11.8 11.8 0 0 0 1.8 17.8L.1 24l6.4-1.7a11.8 11.8 0 0 0 5.6 1.4 11.8 11.8 0 0 0 8.3-20.1"/></svg>
+          Enviar minha receita
+        </a>
+        <a class="btn btn-ghost" href="#como-funciona">Como funciona</a>
+      </div>
+      <div class="selos">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>Regularizada pela Anvisa</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>Farmacêutica CRF-SP 26544</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="7" width="13" height="10" rx="1"/><path d="M14 10h4l3 3v4h-7"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>Delivery</span>
+      </div>
+    </div>
+    <div class="hero-foto rev">
+      <div class="moldura"><img src="img/fachada.jpg" alt="Fachada da Farmácia Lupharma na Rua Ipiranga, 183"></div>
+      <div class="flutua f1">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+        <div><b>Rua Ipiranga, 183</b>Centro · São Vicente</div>
+      </div>
+      <div class="flutua f2">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.5 20.5 3.5 13.5a5 5 0 0 1 7-7l7 7a5 5 0 0 1-7 7z"/><path d="m8.5 8.5 7 7"/></svg></div>
+        <div><b>Dose exata</b>feita para você</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section id="como-funciona" style="padding-top:0">
+  <div class="wrap">
+    <div class="passos rev">
+      <div class="sec-head">
+        <span class="eyebrow">Simples e rápido</span>
+        <h2>Do celular à sua casa em 3 passos</h2>
+        <p class="lead">Sem fila e sem complicação. Você fala direto com a nossa equipe.</p>
+      </div>
+      <div class="passo-grid">
+        <div class="passo">
+          <div class="num">01</div>
+          <h3>Envie sua receita</h3>
+          <p>Tire uma foto da receita e mande pelo WhatsApp. Não tem receita? Conte o que precisa que a gente orienta.</p>
+        </div>
+        <div class="passo">
+          <div class="num">02</div>
+          <h3>Receba o orçamento</h3>
+          <p>Nossa equipe analisa a fórmula, tira suas dúvidas e envia o valor. Você paga só pela quantidade do tratamento.</p>
+        </div>
+        <div class="passo">
+          <div class="num">03</div>
+          <h3>Retire ou receba</h3>
+          <p>Manipulamos com controle rigoroso. É só retirar na loja ou receber em casa pelo nosso delivery.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <span class="eyebrow">O que fazemos</span>
+      <h2>Cuidado completo, do ativo ao acompanhamento</h2>
+    </div>
+    <div class="serv-grid">
+      <article class="card rev">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10.5 20.5 3.5 13.5a5 5 0 0 1 7-7l7 7a5 5 0 0 1-7 7z"/><path d="m8.5 8.5 7 7"/></svg></div>
+        <h3>Medicamentos manipulados</h3>
+        <p>Fórmulas personalizadas com precisão rigorosa: dosagem exata e a associação de ativos que o seu organismo precisa.</p>
+        <ul><li>Cápsulas e sachês</li><li>Cremes, pomadas e loções</li><li>Soluções e gotas</li></ul>
+      </article>
+      <article class="card rev">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a9 9 0 1 1-4-7.5"/><path d="M8 11.5 11 14.5 21 4.5"/></svg></div>
+        <h3>Assistência farmacêutica</h3>
+        <p>Suporte técnico especializado para orientar o uso correto, esclarecer dúvidas e garantir um tratamento seguro e eficaz.</p>
+        <ul><li>Orientação sobre a fórmula</li><li>Acompanhamento do tratamento</li><li>Atendimento próximo e humano</li></ul>
+      </article>
+      <article class="card rev">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10z"/><path d="M2 21c0-3 1.9-5.4 5.1-6"/></svg></div>
+        <h3>Bem-estar</h3>
+        <p>Saúde de forma integral: suplementos e dermocosméticos de alta performance para equilibrar corpo e mente.</p>
+        <ul><li>Fitoterápicos e naturais</li><li>Suplementos e creatinas</li><li>Dermocosméticos</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- VANTAGENS -->
+<section class="vantagens">
+  <div class="wrap vant-wrap">
+    <div class="vant-foto rev"><img src="img/prateleira.jpg" alt="Prateleira com fórmulas e suplementos da Lupharma"></div>
+    <div class="rev">
+      <span class="eyebrow">Por que manipular?</span>
+      <h2 style="margin-top:14px">Feito para o seu tratamento, não para a prateleira</h2>
+      <div class="vant-grid">
+        <div class="vant">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Validade</h3>
+          <p>Pensada para a duração exata do seu tratamento. Nada sobrando no armário.</p>
+        </div>
+        <div class="vant">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Economia</h3>
+          <p>Valor acessível: você paga apenas pela quantidade que vai usar.</p>
+        </div>
+        <div class="vant">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Segurança</h3>
+          <p>Fórmulas rigorosamente controladas, seguindo as normas da Anvisa.</p>
+        </div>
+        <div class="vant">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>Precisão</h3>
+          <p>Pequenas variações de cor ou textura são naturais. A dosagem prescrita é sempre rigorosa.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOJA -->
+<section id="loja">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <span class="eyebrow">Venha nos visitar</span>
+      <h2>Uma loja de bairro, com atendimento de quem conhece você</h2>
+    </div>
+    <div class="loja-grid rev">
+      <figure class="g1"><img src="img/fachada.jpg" alt="Fachada da Lupharma"><figcaption>Rua Ipiranga, 183</figcaption></figure>
+      <figure class="g2"><img loading="lazy" src="img/balcao.jpg" alt="Balcão de atendimento da Lupharma" style="object-position:center 35%"><figcaption>Atendimento</figcaption></figure>
+      <figure><img src="img/suplementos.jpg" alt="Cápsulas e suplementos"><figcaption>Suplementos</figcaption></figure>
+      <div class="g4">
+        <h3>Passou pelo Centro?</h3>
+        <p>Entre para conhecer nossa linha de fitoterápicos, suplementos e dermocosméticos — e tirar suas dúvidas com a farmacêutica.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section style="padding-top:0">
+  <div class="wrap sobre-wrap">
+    <div class="rev">
+      <span class="eyebrow">Sobre a Lupharma</span>
+      <h2 style="margin:14px 0 18px">Manipulando saúde com qualidade e cuidado</h2>
+      <p class="lead">Acreditamos que o dia a dia pode ser funcional, sustentável e mais saudável. Por isso manipulamos medicamentos e suplementos com qualidade e uma seleção de produtos que elevam o seu bem-estar.</p>
+      <div class="rt">
+        <div class="av">LC</div>
+        <div><b>Lucia F. R. Calvo</b><small>Farmacêutica responsável · CRF-SP 26544</small></div>
+      </div>
+    </div>
+    <div class="mv rev">
+      <div class="item">
+        <h3>Nossa missão</h3>
+        <p>Fornecer aos nossos clientes produtos cuidadosamente selecionados que proporcionem uma ampla qualidade de vida.</p>
+      </div>
+      <div class="item">
+        <h3>Nossa visão</h3>
+        <p>Um mundo onde a vida moderna se harmoniza com a natureza, permitindo a todos criar experiências que enriquecem suas vidas.</p>
+      </div>
+      <div class="item">
+        <h3>Nosso compromisso</h3>
+        <p>Ir além da entrega: orientar, acompanhar e garantir que cada tratamento seja seguro e eficaz.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="duvidas" class="vantagens">
+  <div class="wrap">
+    <div class="sec-head center rev">
+      <span class="eyebrow">Dúvidas frequentes</span>
+      <h2>Perguntas que a gente sempre ouve</h2>
+    </div>
+    <div class="faq rev">
+      <details open>
+        <summary>Como faço meu orçamento?</summary>
+        <p>É só clicar em qualquer botão de WhatsApp deste site e enviar uma foto da sua receita. Nossa equipe responde com o valor e tira todas as suas dúvidas.</p>
+      </details>
+      <details>
+        <summary>Preciso de receita médica?</summary>
+        <p>Para medicamentos que exigem prescrição, sim — a manipulação é feita mediante apresentação da receita, conforme a lei. Suplementos e alguns produtos de bem-estar podem ser adquiridos sem receita.</p>
+      </details>
+      <details>
+        <summary>Por que a validade do manipulado é menor?</summary>
+        <p>Porque ele é preparado para a duração exata do seu tratamento, sem conservantes em excesso. Você usa tudo dentro do prazo, sem desperdício.</p>
+      </details>
+      <details>
+        <summary>A cor ou textura pode mudar de uma compra para outra?</summary>
+        <p>Pode haver pequenas variações naturais dos ativos, mas a dosagem prescrita é sempre rigorosamente a mesma.</p>
+      </details>
+      <details>
+        <summary>Vocês entregam?</summary>
+        <p>Sim, temos delivery. Combine a entrega pelo WhatsApp ou pelos telefones (13) 3568-4945 e (13) 3467-1206.</p>
+      </details>
+      <details>
+        <summary>A farmácia é regularizada?</summary>
+        <p>Sim. A Lupharma é regularizada conforme as normas da Anvisa, com farmacêutica responsável Lucia F. R. Calvo (CRF-SP 26544).</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-final" style="padding-top:96px">
+  <div class="wrap">
+    <div class="cta-box rev">
+      <div>
+        <h2>Pronto para começar seu tratamento?</h2>
+        <p>Mande sua receita agora e receba o orçamento sem sair de casa.</p>
+      </div>
+      <div class="acoes">
+        <a class="btn btn-zap js-zap" href="#">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.4 13.4 0 0 0 5.2 4.6c1.8.8 2.5.8 3.4.7a2.9 2.9 0 0 0 1.9-1.3 2.4 2.4 0 0 0 .2-1.3c-.1-.2-.3-.3-.6-.4M12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.8 9.8 0 1 1 8.3 4.6m8.4-18.2A11.8 11.8 0 0 0 1.8 17.8L.1 24l6.4-1.7a11.8 11.8 0 0 0 5.6 1.4 11.8 11.8 0 0 0 8.3-20.1"/></svg>
+          Pedir orçamento no WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="tel:+551334671206">Ligar: (13) 3467-1206</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <span class="eyebrow">Fale conosco</span>
+      <h2>Estamos no coração de São Vicente</h2>
+    </div>
+    <div class="contato-wrap">
+      <div class="contato-lista rev">
+        <a class="ct js-zap" href="#">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.4 13.4 0 0 0 5.2 4.6c1.8.8 2.5.8 3.4.7a2.9 2.9 0 0 0 1.9-1.3 2.4 2.4 0 0 0 .2-1.3c-.1-.2-.3-.3-.6-.4M12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.8 9.8 0 1 1 8.3 4.6m8.4-18.2A11.8 11.8 0 0 0 1.8 17.8L.1 24l6.4-1.7a11.8 11.8 0 0 0 5.6 1.4 11.8 11.8 0 0 0 8.3-20.1"/></svg></div>
+          <div><small>WhatsApp / Telefone</small><b>(13) 3568-4945</b></div>
+        </a>
+        <a class="ct" href="tel:+551334671206">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></div>
+          <div><small>Telefone</small><b>(13) 3467-1206</b></div>
+        </a>
+        <a class="ct" href="mailto:lupharmanipulacao@gmail.com">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></div>
+          <div><small>E-mail</small><b>lupharmanipulacao@gmail.com</b></div>
+        </a>
+        <a class="ct" href="https://www.instagram.com/lupharma183/" target="_blank" rel="noopener">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></div>
+          <div><small>Instagram</small><b>@lupharma183</b></div>
+        </a>
+        <a class="ct" href="https://www.facebook.com/profile.php?id=61583789307292" target="_blank" rel="noopener">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></div>
+          <div><small>Facebook</small><b>Farmácia Lupharma</b></div>
+        </a>
+      </div>
+      <div class="mapa rev">
+        <iframe title="Mapa: Rua Ipiranga, 183 - Centro, São Vicente" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=Rua%20Ipiranga%2C%20183%20-%20Centro%2C%20S%C3%A3o%20Vicente%20-%20SP%2C%2011310-421&z=17&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="brand">
+        <img src="img/logo.png" alt="">
+        <span class="nome">Lupharma<small style="color:var(--lima)">Farmácia de Manipulação</small></span>
+      </div>
+      <div class="legal">
+        <span>Rua Ipiranga, 183 · Centro · São Vicente/SP · CEP 11310-421</span>
+        <span>CNPJ 50.327.368/0001-37</span>
+        <span>Farmacêutica responsável: Lucia F. R. Calvo · CRF-SP 26544</span>
+        <span>Farmácia regularizada conforme normas da Anvisa. Manipulação realizada mediante apresentação de receita médica quando exigido por lei.</span>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="ano"></span> Lupharma Farmácia de Manipulação. Todos os direitos reservados.</span>
+      <a href="#inicio">Voltar ao topo ↑</a>
+    </div>
+  </div>
+</footer>
+
+<a class="zap-float js-zap" href="#" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.4 13.4 0 0 0 5.2 4.6c1.8.8 2.5.8 3.4.7a2.9 2.9 0 0 0 1.9-1.3 2.4 2.4 0 0 0 .2-1.3c-.1-.2-.3-.3-.6-.4M12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.8 9.8 0 1 1 8.3 4.6m8.4-18.2A11.8 11.8 0 0 0 1.8 17.8L.1 24l6.4-1.7a11.8 11.8 0 0 0 5.6 1.4 11.8 11.8 0 0 0 8.3-20.1"/></svg>
+</a>
+
+<script>
+  // Todos os botões de WhatsApp apontam para o mesmo link
+  const ZAP = 'https://wa.me/551335684945?text=' + encodeURIComponent('Olá! Encontrei a Lupharma pelo site e gostaria de solicitar um orçamento, por gentileza.');
+  document.querySelectorAll('.js-zap').forEach(a => { a.href = ZAP; a.target = '_blank'; a.rel = 'noopener'; });
+
+  document.getElementById('ano').textContent = new Date().getFullYear();
+
+  const nav = document.getElementById('nav');
+  addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 10), { passive: true });
+
+  const menu = document.getElementById('menu');
+  document.getElementById('burger').onclick = () => menu.classList.toggle('aberto');
+  menu.querySelectorAll('a').forEach(a => a.onclick = () => menu.classList.remove('aberto'));
+
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } }), { threshold: .12 });
+  document.querySelectorAll('.rev').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
